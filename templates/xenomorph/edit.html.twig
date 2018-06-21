@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Xenomorph{% endblock %}
+
+{% block body %}
+    <h1>Edit Xenomorph</h1>
+
+    {{ include('xenomorph/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('xenomorph_index') }}">back to list</a>
+
+    {{ include('xenomorph/_delete_form.html.twig') }}
+{% endblock %}

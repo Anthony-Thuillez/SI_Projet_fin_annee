@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vivarium{% endblock %}
+
+{% block body %}
+    <h1>Vivarium</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ vivarium.id }}</td>
+            </tr>
+            <tr>
+                <th>Size</th>
+                <td>{{ vivarium.size }}</td>
+            </tr>
+            <tr>
+                <th>Pressure</th>
+                <td>{{ vivarium.pressure }}</td>
+            </tr>
+            <tr>
+                <th>Temperature</th>
+                <td>{{ vivarium.temperature }}</td>
+            </tr>
+            <tr>
+                <th>Atmosphere</th>
+                <td>{{ vivarium.atmosphere }}</td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td>{{ vivarium.price }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('vivarium_index') }}">back to list</a>
+
+    <a href="{{ path('vivarium_edit', {'id': vivarium.id}) }}">edit</a>
+
+    {{ include('vivarium/_delete_form.html.twig') }}
+{% endblock %}

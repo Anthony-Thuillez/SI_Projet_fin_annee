@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vivarium index{% endblock %}
+
+{% block body %}
+    <h1>Vivarium index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Size</th>
+                <th>Pressure</th>
+                <th>Temperature</th>
+                <th>Atmosphere</th>
+                <th>Price</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for vivarium in vivaria %}
+            <tr>
+                <td>{{ vivarium.id }}</td>
+                <td>{{ vivarium.size }}</td>
+                <td>{{ vivarium.pressure }}</td>
+                <td>{{ vivarium.temperature }}</td>
+                <td>{{ vivarium.atmosphere }}</td>
+                <td>{{ vivarium.price }}</td>
+                <td>
+                    <a href="{{ path('vivarium_show', {'id': vivarium.id}) }}">show</a>
+                    <a href="{{ path('vivarium_edit', {'id': vivarium.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('vivarium_new') }}">Create new</a>
+{% endblock %}
