@@ -1,0 +1,33 @@
+.header {
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  height: 46px;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  &__title {
+    position: relative;
+    margin: auto;
+    color: #000;
+    font-family: $font-title;
+    letter-spacing: 1.5px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    @media (min-width: 1366px) {
+      margin-left: 125px;
+    }
+    &::before {
+      position:absolute;
+      content: '';
+      display: block;
+      width: 5px;
+      height: 5px;
+      border-radius: 25px;
+      background: #000;
+      top: 9px;
+      left: -5px;
+    }
+  }
+}

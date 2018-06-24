@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Xenomorph index{% endblock %}
+
+{% block body %}
+    <h1>Xenomorph index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Img_src</th>
+                <th>Img_alt</th>
+                <th>Size</th>
+                <th>Feeding</th>
+                <th>Dangerous</th>
+                <th>Available</th>
+                <th>Type</th>
+                <th>Pressure</th>
+                <th>Temperature</th>
+                <th>Atmosphere</th>
+                <th>Atmoshpere_value</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for xenomorph in xenomorphs %}
+            <tr>
+                <td>{{ xenomorph.id }}</td>
+                <td>{{ xenomorph.name }}</td>
+                <td>{{ xenomorph.description }}</td>
+                <td>{{ xenomorph.price }}</td>
+                <td>{{ xenomorph.imgSrc }}</td>
+                <td>{{ xenomorph.imgAlt }}</td>
+                <td>{{ xenomorph.size }}</td>
+                <td>{{ xenomorph.feeding }}</td>
+                <td>{{ xenomorph.dangerous }}</td>
+                <td>{{ xenomorph.available ? 'Yes' : 'No' }}</td>
+                <td>{{ xenomorph.type }}</td>
+                <td>{{ xenomorph.pressure }}</td>
+                <td>{{ xenomorph.temperature }}</td>
+                <td>{{ xenomorph.atmosphere }}</td>
+                <td>{{ xenomorph.atmoshpereValue }}</td>
+                <td>
+                    <a href="{{ path('xenomorph_show', {'id': xenomorph.id}) }}">show</a>
+                    <a href="{{ path('xenomorph_edit', {'id': xenomorph.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="16">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('xenomorph_new') }}">Create new</a>
+{% endblock %}
