@@ -1,0 +1,69 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+    <div class="filAriane">
+        <p class="filAriane__text">Accueuil / Xénomorph / Terrestre / Griknot</p>
+    </div>
+
+    <section class="sheetXeno">
+
+        <div class="sheetXeno__preview__container">
+
+            <h3 class="sheetXeno__title">Griknot</h3>
+
+            <div class="sheetXeno__descContainer">
+                <div class="sheetXeno__imgContainer">
+                    <img class="sheetXeno__img" src="{{ asset('build/images/griknot.png') }}" alt="xenomorph">
+                </div>
+                <p class="sheetXeno__descText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi dignissimos eaque eligendi, excepturi expedita id in magni.</p>
+            </div>
+
+        </div>
+
+        <div class="sheetXeno__info">
+            <p class="sheetXeno__price__container"><span class="sheetXeno__price">575</span>Þ</p>
+
+            <div class="sheetXeno__button__container">
+                <p class="sheetXeno__available">Disponible</p>
+                <button class="sheetXeno__button">Rendre visite</button>
+            </div>
+        </div>
+
+        <div class="sheetXeno__stats">
+            <table class="sheetXeno__stats__carac">
+                    <tr class="sheetXeno__stats__table">
+                        <th >Catégorie</th>
+                        <td>Terrestre</td>
+                    </tr>
+                    <tr class="sheetXeno__stats__table">
+                        <th>Taille</th>
+                        <td>0.70 m</td>
+                    </tr>
+                    <tr class="sheetXeno__stats__table">
+                        <th class="sheetXeno__stats__table--dangerous">Dangerosité</th>
+                        <td><input type="range" name="dangerous" value="40" min="0" max="100"></td>
+                    </tr>
+                    <tr class="sheetXeno__stats__table">
+                        <th>Alimentation</th>
+                        <td>Carnivore</td>
+                    </tr>
+            </table>
+
+            <table class="sheetXeno__stats__viva">
+                    <tr class="sheetXeno__stats__table">
+                        <th>Température</th>
+                        <td>52°</td>
+                    </tr>
+                    <tr class="sheetXeno__stats__table">
+                        <th>Pression</th>
+                        <td>1,013 bars</td>
+                    </tr>
+                    <tr class="sheetXeno__stats__table">
+                        <th>Atmosphère</th>
+                        <td>X²0</td>
+                    </tr>
+            </table>
+        </div>
+    </section>
+{% endblock %}
