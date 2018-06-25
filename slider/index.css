@@ -1,0 +1,29 @@
+
+img {
+  height: 313px;
+}
+
+/* carousel */
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+  text-align:center;
+
+}
+#quote-carousel .carousel-indicators {
+	color:#60dfe5;
+  position: absolute;
+}
+/* without hover */
+#quote-carousel .carousel-indicators li {
+  background: #333333;
+	height: 6px;
+  width: 70px;
+}
+/* hover */
+#quote-carousel .carousel-indicators .active {
+  background: white;
+  height: 6x;
+  width: 70px;
+  margin-bottom:1px;
+}
