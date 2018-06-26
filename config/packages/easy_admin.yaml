@@ -1,7 +1,0 @@
-easy_admin:
-    entities:
-#        # List the entity class name you want to manage
-        - App\Entity\Xenomorph
-        - App\Entity\Vivarium
-        - App\Entity\Food
-        - App\Entity\User
