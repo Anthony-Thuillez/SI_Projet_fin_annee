@@ -4,12 +4,12 @@
   top: 0;
   height: 46px;
   width: 100%;
-  background: #fff;
+  background: $secondaryColor;
   display: flex;
   &__title {
     position: relative;
     margin: auto;
-    color: #000;
+    color: $ultraColor;
     font-family: $font-title;
     letter-spacing: 1.5px;
     font-size: 24px;
@@ -25,7 +25,7 @@
       width: 5px;
       height: 5px;
       border-radius: 25px;
-      background: #000;
+      background: $ultraColor;
       top: 9px;
       left: -5px;
     }
