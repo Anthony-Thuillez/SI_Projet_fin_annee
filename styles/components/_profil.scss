@@ -1,0 +1,98 @@
+.body {
+  background-image: url("./../imgs/background.png");
+
+  .goback {
+    height: 46px;
+    display: flex;
+    align-items: center;
+
+    &_container {
+      // background-image: url("./../imgs/");
+      background: green;
+      margin-left: 15px;
+    }
+  }
+
+  .account {
+    .account_mainContainer {
+      .account_titleContainer {
+        background: rgba(227,227,227,0.28);
+
+        .account_mainTitle {
+          font-family: 'Poppins';
+          font-size: 24px;
+          letter-spacing: 1.5px;
+          padding: 20px 0;
+          margin-left: 48px;
+        }
+      }
+
+      .account_actions {
+        &_list {
+          margin-left: 48px;
+          margin-top: 24px;
+          margin-bottom: 24px;
+
+          &-item {
+            margin-bottom: 27px;
+
+            &-link {
+              font-family: 'Poppins';
+              font-size: 13px;
+              letter-spacing: 1.5px;
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .personalInformations {
+    .personalInformations_mainContainer {
+      .personalInformations_titleContainer {
+        background: rgba(227,227,227,0.28);
+
+        .personalInformations_mainTitle {
+          font-family: 'Poppins';
+          font-size: 18px;
+          letter-spacing: 1.5px;
+          padding: 20px 0;
+          margin-left: 48px;
+        }
+      }
+
+      .personalInformations_actions {
+        &_list {
+          margin-left: 48px;
+          margin-top: 24px;
+          margin-bottom: 24px;
+
+          &-item {
+            margin-bottom: 27px;
+
+            &-link {
+              font-family: 'Poppins';
+              font-size: 13px;
+              letter-spacing: 1.5px;
+              color: #000;
+            }
+          }
+        }
+
+        .personalInformations_actions_post {
+          &-button {
+            font-family: 'Cabin';
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            color: #000;
+            border: 2px solid #000;
+            padding: 6px 9px;
+            margin-left: 48px;
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+}
