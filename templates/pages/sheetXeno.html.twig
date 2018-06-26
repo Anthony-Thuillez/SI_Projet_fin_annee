@@ -2,27 +2,26 @@
 
 
 {% block body %}
+    {% for xenomorph in xenomorphs %}
     <div class="filAriane">
-        <p class="filAriane__text">Accueuil / Xénomorph / Terrestre / Griknot</p>
+        <p class="filAriane__text">Accueuil / Xénomorph / Terrestre / {{ xenomorph.name }}</p>
     </div>
 
     <section class="sheetXeno">
 
         <div class="sheetXeno__preview__container">
-
-            <h3 class="sheetXeno__title">Griknot</h3>
-
+            <h3 class="sheetXeno__title">{{ xenomorph.name }}</h3>
             <div class="sheetXeno__descContainer">
                 <div class="sheetXeno__imgContainer">
-                    <img class="sheetXeno__img" src="{{ asset('build/images/griknot.png') }}" alt="xenomorph">
+                    <img class="sheetXeno__img" src="{{ asset('images/griknot.png') }}" alt="{{ xenomorph.imgAlt }}">
                 </div>
-                <p class="sheetXeno__descText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi dignissimos eaque eligendi, excepturi expedita id in magni.</p>
+                <p class="sheetXeno__descText">{{ xenomorph.description }}</p>
             </div>
 
         </div>
 
         <div class="sheetXeno__info">
-            <p class="sheetXeno__price__container"><span class="sheetXeno__price">575</span>Þ</p>
+            <p class="sheetXeno__price__container"><span class="sheetXeno__price">{{ xenomorph.price }}</span>Þ</p>
 
             <div class="sheetXeno__button__container">
                 <p class="sheetXeno__available">Disponible</p>
@@ -32,38 +31,39 @@
 
         <div class="sheetXeno__stats">
             <table class="sheetXeno__stats__carac">
-                    <tr class="sheetXeno__stats__table">
-                        <th >Catégorie</th>
-                        <td>Terrestre</td>
-                    </tr>
-                    <tr class="sheetXeno__stats__table">
-                        <th>Taille</th>
-                        <td>0.70 m</td>
-                    </tr>
-                    <tr class="sheetXeno__stats__table">
-                        <th class="sheetXeno__stats__table--dangerous">Dangerosité</th>
-                        <td><input type="range" name="dangerous" value="40" min="0" max="100"></td>
-                    </tr>
-                    <tr class="sheetXeno__stats__table">
-                        <th>Alimentation</th>
-                        <td>Carnivore</td>
-                    </tr>
+                <tr class="sheetXeno__stats__table">
+                    <th >Catégorie</th>
+                    <td>{{ xenomorph.type }}</td>
+                </tr>
+                <tr class="sheetXeno__stats__table">
+                    <th>Taille</th>
+                    <td>{{ xenomorph.size }} m</td>
+                </tr>
+                <tr class="sheetXeno__stats__table">
+                    <th class="sheetXeno__stats__table--dangerous">Dangerosité</th>
+                    <td><input type="range" name="dangerous" value="{{ xenomorph.dangerous }}" min="0" max="100"></td>
+                </tr>
+                <tr class="sheetXeno__stats__table">
+                    <th>Alimentation</th>
+                    <td>{{ xenomorph.feeding }}</td>
+                </tr>
             </table>
 
             <table class="sheetXeno__stats__viva">
-                    <tr class="sheetXeno__stats__table">
-                        <th>Température</th>
-                        <td>52°</td>
-                    </tr>
-                    <tr class="sheetXeno__stats__table">
-                        <th>Pression</th>
-                        <td>1,013 bars</td>
-                    </tr>
-                    <tr class="sheetXeno__stats__table">
-                        <th>Atmosphère</th>
-                        <td>X²0</td>
-                    </tr>
+                <tr class="sheetXeno__stats__table">
+                    <th>Température</th>
+                    <td>{{ xenomorph.temperature }}°</td>
+                </tr>
+                <tr class="sheetXeno__stats__table">
+                    <th>Pression</th>
+                    <td>{{ xenomorph.pressure }} bars</td>
+                </tr>
+                <tr class="sheetXeno__stats__table">
+                    <th>Atmosphère</th>
+                    <td>{{ xenomorph.atmosphere }}</td>
+                </tr>
             </table>
         </div>
     </section>
+    {% endfor %}
 {% endblock %}
