@@ -1,0 +1,9 @@
+// importe les variables scss et le reset
+@import './global/reset';
+@import './global/variables';
+
+// importe les mixines
+@import './mixins/forsize';
+
+// importe le style du header
+@import './components/panier';
