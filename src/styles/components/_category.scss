@@ -1,0 +1,71 @@
+body {
+  font-family: 'poppins';
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.burger {
+  background: white;
+  @media (min-width: 1366px) {
+    width: 40%;
+  }
+  :hover {
+    color: black;
+    cursor: pointer;
+  }
+  &__container {
+    &__style {
+
+    }
+  }
+  &__mainNav {
+    display: none;
+    &__background4 {
+      background-image: url("../img/Terre.jpg");
+      display: flex;
+      justify-content: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      &__container {
+        font-size: 30px;
+        padding: 90px 0 90px 0;
+        color: white;
+      }
+    }
+    &__background5 {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('../img/Eau.jpg');
+
+      &__container {
+        font-size: 30px;
+        padding: 90px 0 90px 0;
+        color: white;
+      }
+    }
+    &__background6 {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('../img/Volatil.jpg');
+      &__container {
+        font-size: 30px;
+        padding: 90px 0 90px 0;
+        color: white;
+      }
+    }
+  }
+}
+.active {
+  display: block;
+}

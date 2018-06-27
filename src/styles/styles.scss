@@ -6,5 +6,7 @@
 @import './mixins/forsize';
 
 // importe le style du header
+@import './components/category';
+@import './components/burger';
 @import './components/panier';
 @import './components/product';
