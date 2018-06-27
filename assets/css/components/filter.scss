@@ -1,0 +1,64 @@
+.allXeno {
+  margin-top: 40px;
+}
+
+.filter {
+  &__container {
+    padding: 4% 10%;
+    background: $mainColor;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  &__text {
+    display: flex;
+    margin: auto;
+    margin-left: 0;
+  }
+  &__choice {
+    border: solid 1px $secondaryColor;
+    font-size: 12px;
+    padding: 2px 5px;
+  }
+  &__croisant {
+
+  }
+  &__decroissant {
+
+  }
+}
+
+.xeno {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  background: $mainColor;
+  padding: 10px 20px;
+  &__container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__imgContainer {
+    border: solid 1px $secondaryColor;
+    border-radius: 180px;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    background: #fff;
+  }
+  &__img {
+    transform: translate(-24%, -10%);
+    width: 100px;
+  }
+  &__name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}

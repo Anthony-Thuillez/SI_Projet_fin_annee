@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+  <section class="shopping">
+    <!-- BackArrow -->
+    <div class="shopping__backArrow"></div>
+    <div class="shopping__titleContainer">
+      <h3 class="shopping__title">Panier</h3>
+    </div>
+  </section>
+
+  <section class="articles">
+    <div class="articles__mainContainer">
+
+      <div class="articles__container">
+        <div class="articles__containerImg">
+          <img class="articles__img" src="https://assets.pokemon.com/assets//cms2-fr-fr/img/play-games/mini-games/alolan-volcanic-panic/alolan-volcanic-panic-169.jpg" alt="images">
+        </div>
+        <div class="articles__textContent">
+          <p class="articles__text">x5</p>
+          <p class="articles__text">Urine simon</p>
+        </div>
+        <p class="articles__price">Prix</p>
+      </div>
+
+      <div class="articles__container">
+        <div class="articles__containerImg">
+          <img class="articles__img" src="https://assets.pokemon.com/assets//cms2-fr-fr/img/play-games/mini-games/alolan-volcanic-panic/alolan-volcanic-panic-169.jpg" alt="images">
+        </div>
+        <div class="articles__textContent">
+          <p class="articles__text">x5</p>
+          <p class="articles__text">Urine simon</p>
+        </div>
+        <p class="articles__price">Prix</p>
+      </div>
+
+      <div class="articles__container">
+        <div class="articles__containerImg">
+          <img class="articles__img" src="https://assets.pokemon.com/assets//cms2-fr-fr/img/play-games/mini-games/alolan-volcanic-panic/alolan-volcanic-panic-169.jpg" alt="images">
+        </div>
+        <div class="articles__textContent">
+          <p class="articles__text">x5</p>
+          <p class="articles__text">Urine simon</p>
+        </div>
+        <p class="articles__price">Prix</p>
+      </div>
+
+    </div>
+  </section>
+  
+  <section class="summary">
+    <div class="summary__section">
+      <div class="summary__contain">
+        <h1 class="summary__container__product__h1">Récapitulatif de commande</h1>
+        <h2 class="summary__container__product__h2"><span>3</span> produits</h2>
+      </div>
+      <div class="summary__container">
+        <div class="summary__container__price">
+          <div class="summary__container__price__total">Total produit</div>
+          <div class="summary__container__price__teleporter">Livraison par téléporteur</div>
+          <div class="summary__container__price__allPrice">Total</div>
+        </div>
+        <div class="summary__container__buy">
+          <div class="summary__container__buy__total">300</div>
+          <div class="summary__container__buy__teleporter">50</div>
+          <div class="summary__container__buy__allPrice">350</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="total">
+    <div class="total__element">
+      <div class="total__element__title">
+        Total : <span class="total__element__title__bold">1 170Þ</span>
+      </div>
+      <div class="total__element__button">
+        <div class="total__element__buy">
+          Payer
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+{% endblock %}

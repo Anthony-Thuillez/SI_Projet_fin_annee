@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="filAriane">
+    <p class="filAriane__text"><a class="filAriane__textLink" href="http://localhost:8000/pages/index">Accueuil </a>/<a class="filAriane__textLink" href="http://localhost:8000/pages/profil"> Profil </a></p>
+</div>
+
+<section class="myAccount">
+  <div class="myAccount__titleContainer">
+    <h3 class="myAccount__title">Mon compte</h3>
+  </div>
+  <div class="myAccount__infoContainer">
+    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Suivi de mes commandes</a></p>
+    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Moyen de paiement</a></p>
+  </div>
+
+  <div class="myAccount__titleContainer">
+    <h3 class="myAccount__title">Informations</h3>
+  </div>
+  <div class="myAccount__infoContainer">
+    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Identifiant :</a></p>
+    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Mot de passe :</a></p>
+    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Nom :</a></p>
+    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Localisation :</a></p>
+    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Adresse :</a></p>
+    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Mail :</a></p>
+    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Téléphone :</a></p>
+  </div>
+</section>
+{% endblock %}
