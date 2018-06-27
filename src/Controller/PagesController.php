@@ -33,6 +33,30 @@ class PagesController extends Controller
     }
 
     /**
+     * @Route("/shopping")
+     */
+    public function shopping() : Response
+    {
+        return $this->render('pages/shopping.html.twig');
+    }
+
+    /**
+     * @Route("/profil")
+     */
+    public function profil() : Response
+    {
+        return $this->render('pages/profil.html.twig');
+    }
+
+    /**
+     * @Route("/filter")
+     */
+    public function filter(XenomorphRepository $xenomorphRepository) : Response
+    {
+        return $this->render('pages/filter.html.twig', ['xenomorphs' => $xenomorphRepository->findAll()]);
+    }
+
+    /**
      * @Route("/sheetXeno")
      */
     public function sheetXeno(XenomorphRepository $xenomorphRepository) : Response
