@@ -91,15 +91,22 @@
       color: #fff;
       letter-spacing: 1.5px;
       font-family: 'Poppins';
+      font-weight: lighter;
+      font-size: 14px;
+      line-height: 21px;
       margin-bottom: 25px;
     }
 
     &-button {
       font-family: 'Cabin';
+      font-weight: 500;
+      font-size: 14px;
       letter-spacing: 1.5px;
       color: #fff;
       border: 2px solid #fff;
       padding: 6px;
+      width: 117px;
+      height: 28px;
     }
   }
 }

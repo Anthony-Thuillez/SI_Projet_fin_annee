@@ -7,7 +7,9 @@
     align-items: center;
 
     &_container {
-      // background-image: url("./../imgs/");
+      background-image: url("./../imgs/backImg.png");
+      width: 45px;
+      height: 16px;
       margin-left: 15px;
     }
   }
@@ -54,7 +56,7 @@
 
         .personalInformations_mainTitle {
           font-family: 'Poppins';
-          font-size: 18px;
+          font-size: 24px;
           letter-spacing: 1.5px;
           padding: 20px 0;
           margin-left: 48px;
@@ -81,12 +83,14 @@
 
         .personalInformations_actions_post {
           &-button {
-            font-family: 'Cabin';
+            font-family: 'Poppins';
+            font-weight: 500;
             font-size: 14px;
             letter-spacing: 1.5px;
             color: #000;
-            border: 2px solid #000;
-            padding: 6px 9px;
+            border: 3px solid #000;
+            width: 104px;
+            height: 37px;
             margin-left: 48px;
             background: #fff;
           }
