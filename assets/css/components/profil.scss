@@ -1,0 +1,29 @@
+.myAccount {
+  margin-top: 40px;
+  &__titleContainer {
+    background: $mainColor;
+    margin-bottom: 30px;
+  }
+  &__title {
+    padding: 10px 0;
+    font-size: 24px;
+    width: 90%;
+    margin: auto;
+    @media(min-width: 1366px) {
+      width: 71%;
+    }
+  }
+  &__infoContainer {
+    width: 90%;
+    margin: auto;
+    @media(min-width: 1366px) {
+      width: 48%;
+    }
+  }
+  &__info {
+    margin-bottom: 30px;
+  }
+  &__infoLink {
+    color: $secondaryColor;
+  }
+}
