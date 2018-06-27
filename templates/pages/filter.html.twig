@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+  <div class="filAriane">
+      <p class="filAriane__text">Accueuil / Xénomorph / Catégorie</p>
+  </div>
+
+  <section class="allXeno">
+
+    <div class="filter">
+      <form class="filter__container" action="#" method="post">
+
+        <div class="filter__content">
+        <p class="filter__text">Prix : </p>
+         <select class="filter__choice" name="filter_price">
+           <option class="filter__croissant" value="Croissant">Croissant</option>
+           <option class="filter__decroissant" value="Decroissant">Decroissant</option>
+         </select>
+       </div>
+
+       <div class="filter__content">
+       <p class="filter__text">Taille : </p>
+        <select class="filter__choice" name="filter_price">
+          <option value="Croissant">Croissant</option>
+          <option value="Decroissant">Decroissant</option>
+        </select>
+      </div>
+
+      <div class="filter__content">
+      <p class="filter__text">Dangerosité : </p>
+       <select class="filter__choice" name="filter_price">
+         <option value="Croissant">Croissant</option>
+         <option value="Decroissant">Decroissant</option>
+       </select>
+     </div>
+
+      </form>
+    </div>
+
+  {% for xenomorph in xenomorphs %}
+    <div class="xeno">
+      <div class="xeno__container">
+        <div class="xeno__imgContainer">
+          <img class="xeno__img" src="{{ asset('images/xenomorph/'~xenomorph.imgSrc|e) }}" alt="{{ xenomorph.imgAlt }}">
+        </div>
+        <h3 class="xeno__name">{{ xenomorph.name }}</h3>
+      </div>
+    </div>
+  {% endfor %}
+
+  </section>
+
+{% endblock %}

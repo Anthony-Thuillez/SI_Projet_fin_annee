@@ -19,6 +19,8 @@
 -- Table structure for table `food`
 --
 
+USE `si_fin_annee`;
+
 DROP TABLE IF EXISTS `food`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
