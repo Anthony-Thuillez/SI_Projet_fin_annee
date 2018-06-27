@@ -1,0 +1,71 @@
+body {
+  font-family: 'poppins';
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.burger {
+  background: white;
+  @media (min-width: 1366px) {
+    width: 40%;
+  }
+  :hover {
+    color: black;
+    cursor: pointer;
+  }
+  &__container {
+    &__style {
+
+    }
+  }
+  &__mainNav {
+    display: none;
+    &__background1 {
+      background-image: url("../img/Xenomorph.jpg");
+      display: flex;
+      justify-content: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      &__container {
+        font-size: 30px;
+        padding: 90px 0 90px 0;
+        color: white;
+      }
+    }
+    &__background2 {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('../img/Nourriture.jpg');
+
+      &__container {
+        font-size: 30px;
+        padding: 90px 0 90px 0;
+        color: white;
+      }
+    }
+    &__background3 {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('../img/Vivarium.png');
+      &__container {
+        font-size: 30px;
+        padding: 90px 0 90px 0;
+        color: white;
+      }
+    }
+  }
+}
+.active {
+  display: block;
+}
