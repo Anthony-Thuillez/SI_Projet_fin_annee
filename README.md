@@ -9,5 +9,3 @@
 
 ## Page paiement
 * L'endroit ou doit être le PHP dans la partie >*>dataBank<*< est en commentaire.
-
-Bugs fixed 27/07/18 & autres corrections

@@ -1,5 +1,5 @@
 .body {
-  background-image: url("./../imgs/background.png");
+  background-image: url("../../imgs/background.png");
 }
 
 .sdSection {
@@ -12,32 +12,49 @@
     justify-content: space-between;
     align-items: center;
     width: 282px;
+    @media screen and (min-width: 1366px) {
+      width: 588px;
+    }
 
     &_container {
       position: relative;
+      display: flex;
+      justify-content: center;
 
       &_element-first {
         width: 85px;
         height: 85px;
         border: 1px solid #000;
-        background-image: url("./../imgs/vivarium.png");
+        background-image: url("../../imgs/vivarium.png");
         background-size: contain;
+        @media screen and (min-width: 1366px) {
+          width: 182px;
+          height: 182px;
+        }
       }
 
       &_element-Snd {
         width: 85px;
         height: 85px;
         border: 1px solid #000;
-        background-image: url("./../imgs/cubes.png");
+        background-image: url("../../imgs/cubes.png");
         background-size: contain;
+        @media screen and (min-width: 1366px) {
+          width: 182px;
+          height: 182px;
+        }
       }
 
       &_element-threed {
         width: 85px;
         height: 85px;
         border: 1px solid #000;
-        background-image: url("./../imgs/xeno.png");
+        background-image: url("../../imgs/xeno.png");
         background-size: cover;
+        @media screen and (min-width: 1366px) {
+          width: 182px;
+          height: 182px;
+        }
       }
 
       &-text {
@@ -49,6 +66,9 @@
         font-weight: bold;
         text-shadow: 1px 1px #fff;
         font-family: 'Cabin';
+        @media screen and (min-width: 1366px) {
+          bottom: -20px;
+        }
       }
     }
   }
@@ -56,11 +76,14 @@
 
 .thdSection {
   height: 270px;
-  background-image: url("./../imgs/bigvivarium.png");
+  background-image: url("../../imgs/bigvivarium.png");
   background-size: cover;
   position: relative;
   z-index: 1;
-  margin-bottom: 140px;
+  margin-bottom: 23px;
+  @media screen and (min-width: 1366px) {
+    background-position: bottom 31% left 0;
+  }
 
   .blackscreen {
     background: rgba(0,0,0,0.5);
@@ -85,6 +108,9 @@
       background: -webkit-linear-gradient(rgba(255,255,255,1), rgba(0,0,0,1));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      @media screen and (min-width: 1366px) {
+        font-size: 64px;
+      }
     }
 
     &-text {
@@ -117,6 +143,12 @@
   .container {
     padding: 0;
     margin: 0;
+    @media screen and (min-width: 1366px) {
+      width: 100vw;
+    }
+    @media (min-width: 768px) {
+      width: 100vw;
+    }
   }
 
   img {
@@ -134,7 +166,10 @@
 
   .col-sm-12 {
     width: 100%;
+    height: 313px;
     padding: 0;
+    background-image: url("../../imgs/slide1.png");
+    background-size: cover;
   }
 
   .item {
@@ -163,5 +198,139 @@
     height: 2px;
     width: 54px;
     margin-bottom: 1px;
+  }
+}
+
+.frhSection0,
+.frhSection1,
+.frhSection2 {
+  &_titleContainer {
+    background: rgba(227, 227, 227, 0.28);
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1366px) {
+      justify-content: flex-start;
+    }
+
+    &_mainTitle {
+      font-size: 24px;
+      font-family: 'Poppins';
+      letter-spacing: 1.5px;
+      @media screen and (min-width: 1366px) {
+        margin-left: 202px;
+      }
+    }
+  }
+
+  .popularVivariumContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media screen and (min-width: 1366px) {
+      margin-left: 202px;
+      margin-right: 202px;
+    }
+
+    &_element {
+      margin: 23px auto 30px;
+      @media screen and (min-width: 1366px) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+
+      &-picture {
+        background: #000;
+        width: 132px;
+        height: 131px;
+        background: url("../../imgs/vivarium.png");
+        background-size: contain;
+        @media screen and (min-width: 1366px) {
+          width: 386px;
+          height: 299px;
+          background-size: cover;
+        }
+      }
+
+      &-title {
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        color: #000;
+        font-family: 'Poppins';
+        @media screen and (min-width: 1366px) {
+          font-size: 18px;
+        }
+      }
+
+      &-price {
+        text-align: right;
+        font-weight: bold;
+        font-size: 14px;
+        color: #000;
+        font-family: 'Poppins';
+        @media screen and (min-width: 1366px) {
+          font-size: 18px;
+        }
+      }
+
+      &-link {
+        display: flex;
+        justify-content: center;
+        font-family: 'Cabin';
+        font-weight: bold;
+        font-size: 12px;
+        color: #000;
+        border: 2px solid #000;
+        @media screen and (min-width: 1366px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.frhSection1 {
+  display: none;
+}
+
+.frhSection2 {
+  display: none;
+}
+
+.annonce {
+  margin-bottom: 100px;
+
+  &_Container {
+    position: relative;
+    height: 370px;
+
+    &-title {
+      position: absolute;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: 'Poppins';
+      white-space: pre;
+      line-height: 27px;
+      top: 0;
+      left: 48px;
+      @media screen and (min-width: 1366px) {
+        font-size: 36px;
+        line-height: 56px;
+        left: 325px;
+      }
+    }
+
+    &_fatxenomorph {
+      &-img {
+        position: absolute;
+        width: 250px;
+        bottom: 0;
+        right: 40px;
+        @media screen and (min-width: 1366px) {
+          width: 300px;
+          right: 320px;
+        }
+      }
+    }
   }
 }

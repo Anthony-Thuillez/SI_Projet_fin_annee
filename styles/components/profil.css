@@ -1,0 +1,80 @@
+.body {
+  background-image: url("../../imgs/background.png"); }
+  .body .goback {
+    height: 46px;
+    display: flex;
+    align-items: center; }
+    .body .goback_container {
+      background-image: url("../../imgs/backImg.png");
+      width: 45px;
+      height: 16px;
+      margin-left: 15px; }
+      @media screen and (min-width: 1366px) {
+        .body .goback_container {
+          margin-left: 222px; } }
+  .body .account .account_mainContainer .account_titleContainer {
+    background: rgba(227, 227, 227, 0.28); }
+    .body .account .account_mainContainer .account_titleContainer .account_mainTitle {
+      font-family: 'Poppins';
+      font-size: 24px;
+      letter-spacing: 1.5px;
+      padding: 20px 0;
+      margin-left: 48px; }
+      @media screen and (min-width: 1366px) {
+        .body .account .account_mainContainer .account_titleContainer .account_mainTitle {
+          margin-left: 222px; } }
+  .body .account .account_mainContainer .account_actions_list {
+    margin-left: 48px;
+    margin-top: 24px;
+    margin-bottom: 24px; }
+    @media screen and (min-width: 1366px) {
+      .body .account .account_mainContainer .account_actions_list {
+        margin-left: 528px; } }
+    .body .account .account_mainContainer .account_actions_list-item {
+      margin-bottom: 27px; }
+      .body .account .account_mainContainer .account_actions_list-item-link {
+        font-family: 'Poppins';
+        font-size: 13px;
+        letter-spacing: 1.5px;
+        color: #000; }
+  .body .personalInformations .personalInformations_mainContainer .personalInformations_titleContainer {
+    background: rgba(227, 227, 227, 0.28); }
+    .body .personalInformations .personalInformations_mainContainer .personalInformations_titleContainer .personalInformations_mainTitle {
+      font-family: 'Poppins';
+      font-size: 24px;
+      letter-spacing: 1.5px;
+      padding: 20px 0;
+      margin-left: 48px; }
+      @media screen and (min-width: 1366px) {
+        .body .personalInformations .personalInformations_mainContainer .personalInformations_titleContainer .personalInformations_mainTitle {
+          margin-left: 222px; } }
+  .body .personalInformations .personalInformations_mainContainer .personalInformations_actions_list {
+    margin-left: 48px;
+    margin-top: 24px;
+    margin-bottom: 24px; }
+    @media screen and (min-width: 1366px) {
+      .body .personalInformations .personalInformations_mainContainer .personalInformations_actions_list {
+        margin-left: 528px; } }
+    .body .personalInformations .personalInformations_mainContainer .personalInformations_actions_list-item {
+      margin-bottom: 27px; }
+      .body .personalInformations .personalInformations_mainContainer .personalInformations_actions_list-item-link {
+        font-family: 'Poppins';
+        font-size: 13px;
+        letter-spacing: 1.5px;
+        color: #000; }
+  .body .personalInformations .personalInformations_mainContainer .personalInformations_actions .personalInformations_actions_post-button {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #000;
+    border: 3px solid #000;
+    width: 104px;
+    height: 37px;
+    margin-left: 48px;
+    background: #fff; }
+    @media screen and (min-width: 1366px) {
+      .body .personalInformations .personalInformations_mainContainer .personalInformations_actions .personalInformations_actions_post-button {
+        margin-left: 528px; } }
+
+/*# sourceMappingURL=profil.css.map */

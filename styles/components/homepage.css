@@ -1,0 +1,297 @@
+.body {
+  background-image: url("../../imgs/background.png"); }
+
+.sdSection {
+  height: 235px;
+  display: flex;
+  justify-content: center; }
+  .sdSection .sdSectionMainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 282px; }
+    @media screen and (min-width: 1366px) {
+      .sdSection .sdSectionMainContainer {
+        width: 588px; } }
+    .sdSection .sdSectionMainContainer_container {
+      position: relative;
+      display: flex;
+      justify-content: center; }
+      .sdSection .sdSectionMainContainer_container_element-first {
+        width: 85px;
+        height: 85px;
+        border: 1px solid #000;
+        background-image: url("../../imgs/vivarium.png");
+        background-size: contain; }
+        @media screen and (min-width: 1366px) {
+          .sdSection .sdSectionMainContainer_container_element-first {
+            width: 182px;
+            height: 182px; } }
+      .sdSection .sdSectionMainContainer_container_element-Snd {
+        width: 85px;
+        height: 85px;
+        border: 1px solid #000;
+        background-image: url("../../imgs/cubes.png");
+        background-size: contain; }
+        @media screen and (min-width: 1366px) {
+          .sdSection .sdSectionMainContainer_container_element-Snd {
+            width: 182px;
+            height: 182px; } }
+      .sdSection .sdSectionMainContainer_container_element-threed {
+        width: 85px;
+        height: 85px;
+        border: 1px solid #000;
+        background-image: url("../../imgs/xeno.png");
+        background-size: cover; }
+        @media screen and (min-width: 1366px) {
+          .sdSection .sdSectionMainContainer_container_element-threed {
+            width: 182px;
+            height: 182px; } }
+      .sdSection .sdSectionMainContainer_container-text {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -8px;
+        font-size: 14px;
+        font-weight: bold;
+        text-shadow: 1px 1px #fff;
+        font-family: 'Cabin'; }
+        @media screen and (min-width: 1366px) {
+          .sdSection .sdSectionMainContainer_container-text {
+            bottom: -20px; } }
+
+.thdSection {
+  height: 270px;
+  background-image: url("../../imgs/bigvivarium.png");
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 23px; }
+  @media screen and (min-width: 1366px) {
+    .thdSection {
+      background-position: bottom 31% left 0; } }
+  .thdSection .blackscreen {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%; }
+  .thdSection .thdSection_container {
+    height: 100%;
+    margin: 0 12.26%;
+    text-align: right;
+    z-index: 2; }
+    .thdSection .thdSection_container-title {
+      padding: 20px 0 38px;
+      font-family: 'Cabin';
+      font-weight: bold;
+      font-size: 48px;
+      letter-spacing: 1.5px;
+      background: -webkit-linear-gradient(white, black);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+      @media screen and (min-width: 1366px) {
+        .thdSection .thdSection_container-title {
+          font-size: 64px; } }
+    .thdSection .thdSection_container-text {
+      color: #fff;
+      letter-spacing: 1.5px;
+      font-family: 'Poppins';
+      font-weight: lighter;
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 25px; }
+    .thdSection .thdSection_container-button {
+      font-family: 'Cabin';
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+      color: #fff;
+      border: 2px solid #fff;
+      padding: 6px;
+      width: 117px;
+      height: 28px; }
+
+.fstSection {
+  width: 100vw;
+  /* carousel */
+  /* without hover */
+  /* hover */ }
+  .fstSection .container {
+    padding: 0;
+    margin: 0; }
+    @media screen and (min-width: 1366px) {
+      .fstSection .container {
+        width: 100vw; } }
+    @media (min-width: 768px) {
+      .fstSection .container {
+        width: 100vw; } }
+  .fstSection img {
+    width: 100vw;
+    height: 313px; }
+  .fstSection .col-md-12 {
+    padding: 0; }
+  .fstSection .row {
+    margin: 0; }
+  .fstSection .col-sm-12 {
+    width: 100%;
+    height: 313px;
+    padding: 0;
+    background-image: url("../../imgs/slide1.png");
+    background-size: cover; }
+  .fstSection .item {
+    cursor: pointer; }
+  .fstSection #quote-carousel {
+    text-align: center; }
+  .fstSection #quote-carousel .carousel-indicators {
+    position: absolute;
+    bottom: 24px; }
+  .fstSection #quote-carousel .carousel-indicators li {
+    background: #848484;
+    height: 2px;
+    width: 54px;
+    border-radius: 0;
+    border: 0; }
+  .fstSection #quote-carousel .carousel-indicators .active {
+    background: white;
+    height: 2px;
+    width: 54px;
+    margin-bottom: 1px; }
+
+.frhSection0_titleContainer,
+.frhSection1_titleContainer,
+.frhSection2_titleContainer {
+  background: rgba(227, 227, 227, 0.28);
+  display: flex;
+  justify-content: center; }
+  @media screen and (min-width: 1366px) {
+    .frhSection0_titleContainer,
+    .frhSection1_titleContainer,
+    .frhSection2_titleContainer {
+      justify-content: flex-start; } }
+  .frhSection0_titleContainer_mainTitle,
+  .frhSection1_titleContainer_mainTitle,
+  .frhSection2_titleContainer_mainTitle {
+    font-size: 24px;
+    font-family: 'Poppins';
+    letter-spacing: 1.5px; }
+    @media screen and (min-width: 1366px) {
+      .frhSection0_titleContainer_mainTitle,
+      .frhSection1_titleContainer_mainTitle,
+      .frhSection2_titleContainer_mainTitle {
+        margin-left: 202px; } }
+.frhSection0 .popularVivariumContainer,
+.frhSection1 .popularVivariumContainer,
+.frhSection2 .popularVivariumContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  @media screen and (min-width: 1366px) {
+    .frhSection0 .popularVivariumContainer,
+    .frhSection1 .popularVivariumContainer,
+    .frhSection2 .popularVivariumContainer {
+      margin-left: 202px;
+      margin-right: 202px; } }
+  .frhSection0 .popularVivariumContainer_element,
+  .frhSection1 .popularVivariumContainer_element,
+  .frhSection2 .popularVivariumContainer_element {
+    margin: 23px auto 30px; }
+    @media screen and (min-width: 1366px) {
+      .frhSection0 .popularVivariumContainer_element,
+      .frhSection1 .popularVivariumContainer_element,
+      .frhSection2 .popularVivariumContainer_element {
+        margin-right: 0;
+        margin-left: 0; } }
+    .frhSection0 .popularVivariumContainer_element-picture,
+    .frhSection1 .popularVivariumContainer_element-picture,
+    .frhSection2 .popularVivariumContainer_element-picture {
+      background: #000;
+      width: 132px;
+      height: 131px;
+      background: url("../../imgs/vivarium.png");
+      background-size: contain; }
+      @media screen and (min-width: 1366px) {
+        .frhSection0 .popularVivariumContainer_element-picture,
+        .frhSection1 .popularVivariumContainer_element-picture,
+        .frhSection2 .popularVivariumContainer_element-picture {
+          width: 386px;
+          height: 299px;
+          background-size: cover; } }
+    .frhSection0 .popularVivariumContainer_element-title,
+    .frhSection1 .popularVivariumContainer_element-title,
+    .frhSection2 .popularVivariumContainer_element-title {
+      text-align: center;
+      font-weight: 500;
+      font-size: 14px;
+      color: #000;
+      font-family: 'Poppins'; }
+      @media screen and (min-width: 1366px) {
+        .frhSection0 .popularVivariumContainer_element-title,
+        .frhSection1 .popularVivariumContainer_element-title,
+        .frhSection2 .popularVivariumContainer_element-title {
+          font-size: 18px; } }
+    .frhSection0 .popularVivariumContainer_element-price,
+    .frhSection1 .popularVivariumContainer_element-price,
+    .frhSection2 .popularVivariumContainer_element-price {
+      text-align: right;
+      font-weight: bold;
+      font-size: 14px;
+      color: #000;
+      font-family: 'Poppins'; }
+      @media screen and (min-width: 1366px) {
+        .frhSection0 .popularVivariumContainer_element-price,
+        .frhSection1 .popularVivariumContainer_element-price,
+        .frhSection2 .popularVivariumContainer_element-price {
+          font-size: 18px; } }
+    .frhSection0 .popularVivariumContainer_element-link,
+    .frhSection1 .popularVivariumContainer_element-link,
+    .frhSection2 .popularVivariumContainer_element-link {
+      display: flex;
+      justify-content: center;
+      font-family: 'Cabin';
+      font-weight: bold;
+      font-size: 12px;
+      color: #000;
+      border: 2px solid #000; }
+      @media screen and (min-width: 1366px) {
+        .frhSection0 .popularVivariumContainer_element-link,
+        .frhSection1 .popularVivariumContainer_element-link,
+        .frhSection2 .popularVivariumContainer_element-link {
+          font-size: 14px; } }
+
+.frhSection1 {
+  display: none; }
+
+.frhSection2 {
+  display: none; }
+
+.annonce {
+  margin-bottom: 100px; }
+  .annonce_Container {
+    position: relative;
+    height: 370px; }
+    .annonce_Container-title {
+      position: absolute;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: 'Poppins';
+      white-space: pre;
+      line-height: 27px;
+      top: 0;
+      left: 48px; }
+      @media screen and (min-width: 1366px) {
+        .annonce_Container-title {
+          font-size: 36px;
+          line-height: 56px;
+          left: 325px; } }
+    .annonce_Container_fatxenomorph-img {
+      position: absolute;
+      width: 250px;
+      bottom: 0;
+      right: 40px; }
+      @media screen and (min-width: 1366px) {
+        .annonce_Container_fatxenomorph-img {
+          width: 300px;
+          right: 320px; } }
+
+/*# sourceMappingURL=homepage.css.map */

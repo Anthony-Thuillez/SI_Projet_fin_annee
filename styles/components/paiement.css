@@ -1,0 +1,37 @@
+.body {
+  background-image: url("./../imgs/background.png"); }
+  .body .goback {
+    height: 46px;
+    display: flex;
+    align-items: center; }
+    .body .goback_container {
+      background-image: url("./../imgs/backImg.png");
+      width: 45px;
+      height: 16px;
+      margin-left: 15px; }
+  .body .dataBank .dataBank_container {
+    background: #F6F6F6;
+    width: 283px;
+    height: 110px;
+    margin-left: 48px;
+    margin-bottom: 20px; }
+    .body .dataBank .dataBank_container-title {
+      padding-top: 15px;
+      padding-bottom: 23px;
+      padding-left: 20px; }
+    .body .dataBank .dataBank_container-number {
+      padding-bottom: 23px;
+      padding-left: 20px; }
+  .body .dataBank .dataBank_actions_post-button {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #000;
+    border: 3px solid #000;
+    width: 104px;
+    height: 37px;
+    margin-left: 48px;
+    background: #fff; }
+
+/*# sourceMappingURL=paiement.css.map */

@@ -1,5 +1,5 @@
 .body {
-  background-image: url("./../imgs/background.png");
+  background-image: url("../../imgs/background.png");
 
   .goback {
     height: 46px;
@@ -7,10 +7,13 @@
     align-items: center;
 
     &_container {
-      background-image: url("./../imgs/backImg.png");
+      background-image: url("../../imgs/backImg.png");
       width: 45px;
       height: 16px;
       margin-left: 15px;
+      @media screen and (min-width: 1366px) {
+        margin-left: 222px;
+      }
     }
   }
 
@@ -25,6 +28,9 @@
           letter-spacing: 1.5px;
           padding: 20px 0;
           margin-left: 48px;
+          @media screen and (min-width: 1366px) {
+            margin-left: 222px;
+          }
         }
       }
 
@@ -33,6 +39,9 @@
           margin-left: 48px;
           margin-top: 24px;
           margin-bottom: 24px;
+          @media screen and (min-width: 1366px) {
+            margin-left: 528px;
+          }
 
           &-item {
             margin-bottom: 27px;
@@ -60,6 +69,9 @@
           letter-spacing: 1.5px;
           padding: 20px 0;
           margin-left: 48px;
+          @media screen and (min-width: 1366px) {
+            margin-left: 222px;
+          }
         }
       }
 
@@ -68,6 +80,9 @@
           margin-left: 48px;
           margin-top: 24px;
           margin-bottom: 24px;
+          @media screen and (min-width: 1366px) {
+            margin-left: 528px;
+          }
 
           &-item {
             margin-bottom: 27px;
@@ -93,6 +108,9 @@
             height: 37px;
             margin-left: 48px;
             background: #fff;
+            @media screen and (min-width: 1366px) {
+              margin-left: 528px;
+            }
           }
         }
       }
