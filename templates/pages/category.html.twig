@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+<div class="filAriane">
+    <p class="filAriane__text"><a class="filAriane__textLink" href="{{ path('index') }}"> Accueuil </a>/<a class="filAriane__textLink" href="{{ path('xeno_category') }}"> Catégorie </a></p>
+</div>
+
+<section class="category">
+    <div class="category__container">
+
+      <div class="category__content terrestre">
+        <a href="{{ path('xeno_filter') }}"><h3 class="category__title">Xenomorph</h3></a>
+      </div>
+
+      <div class="category__content aquatique">
+        <a href="{{ path('vivarium') }}"><h3 class="category__title">Vivarium</h3></a>
+      </div>
+
+      <div class="category__content volant">
+        <a href="{{ path('food') }}"><h3 class="category__title">Alimentation</h3></a>
+      </div>
+
+    </div>
+  </section>
+{% endblock %}

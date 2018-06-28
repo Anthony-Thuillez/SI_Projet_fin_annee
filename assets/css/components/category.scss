@@ -1,0 +1,36 @@
+.category {
+  margin-top: 100px;
+  height: 535px;
+  &__container {
+    width: 90%;
+    margin: auto;
+    @media(min-width: 1366px) {
+      width: 40%;
+    }
+  }
+  &__content {
+    height: 100px;
+    margin-bottom: 40px;
+  }
+  &__title {
+    color: $mainColor;
+    font-weight: bold;
+    font-family: $font-title;
+    font-size: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+  }
+}
+
+.terrestre {
+  background-image: url('../../images/background/terrestre.jpg');
+}
+.aquatique {
+  background-image: url('../../images/background/aquatique.jpg');
+}
+.volant {
+  background-image: url('../../images/background/volant.jpg');
+}

@@ -3,7 +3,7 @@
 
 {% block body %}
   <div class="filAriane">
-      <p class="filAriane__text">Accueuil / Xénomorph / Catégorie</p>
+      <p class="filAriane__text"><a class="filAriane__textLink" href="{{ path('index') }}"> Accueuil </a>/<a class="filAriane__textLink" href="{{ path('xeno_category') }}"> Catégorie </a>/<a class="filAriane__textLink" href="{{ path('xeno_filter') }}"> Xénomorph </a></p>
   </div>
 
   <section class="allXeno">
@@ -40,12 +40,17 @@
 
   {% for xenomorph in xenomorphs %}
     <div class="xeno">
+    <a href="{{ path('xeno_sheet', {'id': xenomorph.id } ) }}">
       <div class="xeno__container">
         <div class="xeno__imgContainer">
           <img class="xeno__img" src="{{ asset('images/xenomorph/'~xenomorph.imgSrc|e) }}" alt="{{ xenomorph.imgAlt }}">
         </div>
         <h3 class="xeno__name">{{ xenomorph.name }}</h3>
+        <div class="xeno__price__container">
+            <p class="xeno__price"><span class="xeno__priceContent">{{ xenomorph.price }}</span>Þ</p>
+        </div>
       </div>
+      </a>
     </div>
   {% endfor %}
 

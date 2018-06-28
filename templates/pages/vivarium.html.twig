@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+<div class="filAriane">
+    <p class="filAriane__text"><a class="filAriane__textLink" href="{{ path('index') }}">Accueuil </a>/<a class="filAriane__textLink" href="{{ path('xeno_category') }}"> Catégorie </a>/<a class="filAriane__textLink" href="{{ path('vivarium') }}"> Vivarium </a></p>
+</div>
+
+<section class="vivarium__products">
+  <p class="vivarium__products__title">Vivarium</p>
+  </div>
+  <div class="vivarium__products__allsize">
+    <div class="vivarium__products__allsize__picture"></div>
+    <div class="vivarium__products__allsize__container">
+      <button class="vivarium__products__allsize__container__s">s</button>
+      <button class="vivarium__products__allsize__container__m">m</button>
+      <button class="vivarium__products__allsize__container__xl">xl</button>
+    </div>
+  </div>
+  <div class="avaible__container">
+    <p class="avaible__text"></p>
+  </div>
+  <div class="vivarium__products__description">
+    <p class="vivarium__products__description__title">Description</p>
+    <p class="vivarium__products__description__text">Une fois configuré, nos vivariums reproduisent l'environnement de votre xenomorph.</p>
+  </div>
+  <div class="vivarium__products__buy">
+    <div class="vivarium__products__buy__container">
+      <p class="vivarium__products__buy__container__price">3 000$</p>
+      <button class="vivarium__products__buy__button" type="button" name="button">Ajouter au panier</button>
+    </div>
+  </div>
+</section>
+{% endblock %}

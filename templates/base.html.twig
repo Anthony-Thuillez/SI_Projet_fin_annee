@@ -10,24 +10,24 @@
     <body>
         <header class="header">
           <div class="header__container">
-            <h1 class="header__title"><a class="header__titleLink" href="http://localhost:8000/pages/index">Xénoshop</a></h1>
+            <h1 class="header__title"><a class="header__titleLink" href="{{ path('index') }}">Xénoshop</a></h1>
 
             <nav class="header__nav">
               <ul class="header__nav__listContent">
-                <li class="header__nav__list"><a class="header__nav__listLink" href="http://localhost:8000/pages/sheetXeno">Xenomorph</a></li>
-                <li class="header__nav__list"><a class="header__nav__listLink" href="#">Vivarium</a></li>
-                <li class="header__nav__list"><a class="header__nav__listLink" href="#">Alimentation</a></li>
+                <li class="header__nav__list"><a class="header__nav__listLink" href="{{ path('xeno_filter') }}">Xenomorph</a></li>
+                <li class="header__nav__list"><a class="header__nav__listLink" href="{{ path('vivarium') }}">Vivarium</a></li>
+                <li class="header__nav__list"><a class="header__nav__listLink" href="{{ path('food') }}">Alimentation</a></li>
                 <li class="header__nav__listSearch">
                   <input class="header__nav__search" type="text" name="research" placeholder="rechercher" value="">
                   <img class="header__nav__logoSearch" src="{{ asset('images/nav/search.png') }}" alt="Search">
                 </li>
                 <li class="header__nav__list">
-                  <a href="http://localhost:8000/pages/shopping">
+                  <a href="{{ path('shopping') }}">
                     <img class="header__nav__logo" src="{{ asset('images/nav/shopping_bag.png') }}" alt="Panier">
                   </a>
                 </li>
                 <li class="header__nav__list">
-                  <a href="http://localhost:8000/pages/profil">
+                  <a href="{{ path('profil') }}">
                     <img class="header__nav__logo" src="{{ asset('images/nav/octopus.png') }}" alt="Profil">
                   </a>
                 </li>
@@ -59,18 +59,20 @@
         <nav class="mobile__nav">
           <ul class="mobile__nav__listContent">
             <li id="menuBurger" class="mobile__nav__list">
+              <a href="{{ path('xeno_category') }}">
               <img class="mobile__nav__logo" src="{{ asset('images/nav/menu.png') }}" alt="menu">
+              </a>
             </li>
             <li id="search" class="mobile__nav__list">
               <img class="mobile__nav__logo" src="{{ asset('images/nav/search.png') }}" alt="Search">
             </li>
             <li id="shoppingBag" class="mobile__nav__list">
-              <a href="http://localhost:8000/pages/shopping">
+              <a href="{{ path('shopping') }}">
                 <img class="mobile__nav__logo" src="{{ asset('images/nav/shopping_bag.png') }}" alt="Panier">
               </a>
             </li>
             <li id="profil" class="mobile__nav__list">
-                <a href="http://localhost:8000/pages/profil">
+                <a href="{{ path('profil') }}">
                   <img class="mobile__nav__logo" src="{{ asset('images/nav/octopus.png') }}" alt="Profil">
               </a>
             </li>

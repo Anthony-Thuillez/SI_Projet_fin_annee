@@ -1,0 +1,76 @@
+
+.productspage{
+  margin-top: 40px;
+    &__new{
+      background-image: url('../../images/foodbird.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 220px;
+      @media(min-width: 1366px){
+        height: 600px;
+      }
+      &__bigcontainer{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+      &__container{
+        display: flex;
+        justify-content: flex-end;
+        &__headbands{
+          background-color: black;
+          width: 150px;
+          height: 28.23px;
+          margin-top: 2%;
+          @media(min-width: 1366px){
+            margin-top: 4%;
+            width: 200px;
+            height: 50px;
+          }
+          &__title{
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            font-family: $font-text;
+            margin:4%;
+            @media(min-width: 1366px){
+              font-size: 28px;
+            }
+          }
+        }
+      }
+      &__containertwo{
+        text-align: right;
+        width: 400px;
+        @media(min-width: 1366PX){
+          text-align: right;
+        }
+
+        &__text{
+          color: white;
+          font-family:$font-text;
+          font-size: 17px;
+          margin-top: 2%;
+          @media(min-width: 1366px){
+            font-size: 28px;
+          }
+        }
+      }
+      &__button{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 4%;
+        @media(min-width:1366px){
+          height:50px;
+        }
+
+        &__title{
+        font-size: 20px;
+        border: solid 2px black;
+        background-color: white;
+        color: black;
+        }
+      }
+    }
+    }
+  }

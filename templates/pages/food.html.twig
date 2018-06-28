@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+<div class="filAriane">
+    <p class="filAriane__text"><a class="filAriane__textLink" href="{{ path('index') }}">Accueuil </a>/<a class="filAriane__textLink" href="{{ path('xeno_category') }}"> Catégorie </a>/<a class="filAriane__textLink" href="{{ path('food') }}"> Alimentation </a></p>
+</div>
+
+<section class="productspage">
+    <section class="productspage__new">
+      <div class="productspage__new__bigcontainer">
+        <div class="productspage__new__bigcontainer__container">
+          <div class="productspage__new__bigcontainer__container__headbands">
+            <p class="productspage__new__bigcontainer__container__headbands__title">Nouveau</p>
+          </div>
+        </div>
+        <div class="productspage__new__bigcontainer__button">
+          <button class="productspage__new__bigcontainer__button__title" type="button" name="button">Voir la fiche technique</button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="productspage__new__bigcontainer__allproducts">
+      <div class="productspage__new__bigcontainer__allproducts__container">
+        <p class="productspage__new__bigcontainer__allproducts__container__title">tout nos aliments</p>
+      </div>
+      <div class="productspage__new__bigcontainer__allproducts__oneproducts">
+        <div class="productspage__new__bigcontainer__allproducts__oneproducts__picture">
+        </div>
+        <p class="productspage__new__bigcontainer__allproducts__oneproducts__title">nom de la nourriture</p>
+        <p class="productspage__new__bigcontainer__allproducts__oneproducts__price">30$</p>
+        <div class="productspage__new__bigcontainer__allproducts__oneproducts__container">
+          <button class="productspage__new__bigcontainer__allproducts__oneproducts__container__button" type="button" name="button">Ajouter au panier</button>
+        </div>
+      </div>
+
+    </section>
+
+  </section>
+{% endblock %}
