@@ -32,6 +32,9 @@ Fonctionnalités du site web :
 * Prendre rendez vous pour rendre visite à un Xénomorph
 * Achat de la nourriture pour Xénomorph
 
+![Sitemap](https://i.gyazo.com/a49a7ecf367f843801c181e93cd492d4.png)
+
+
 ### 3 - Description d'ensemble
 #### 3.1- Choix techniques
 * ```MYSQL```
@@ -68,7 +71,7 @@ Fonctionnalités du site web :
 * Nom, string
 * Description, string
 * Prix, float
-* image_src, string
+* image_src, string. 
 * image_alt, string
 * quantité, integer
 * dangerosité, string
@@ -128,7 +131,7 @@ entity xenomorphe
 
 
 #### 5.2- Modélisation
-![Sitemap](https://i.gyazo.com/a49a7ecf367f843801c181e93cd492d4.png)
+![Modélisation de la BDD](https://i.gyazo.com/836ceaeda4ec2ab0eb541b7508e73dd5.png)
 
 #### 5.3- Projection de volumétrie
 Nous visons entre 500 et 1000 personnes par mois sur notre site. 
@@ -153,7 +156,6 @@ Nous visons entre 500 et 1000 personnes par mois sur notre site.
 
 
 ### 8 - Installation et déploiement
-#### 8.1- Installation
 Ouvrir le shell, télécharger le dépôt.
 
 ```shell
@@ -170,6 +172,8 @@ Construir les fichiers  ```SCSS```.
 
 ```shell
 ```
+#### 8.1- Installation
+
 
 
 #### 8.2- Déploiement
