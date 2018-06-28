@@ -5,17 +5,18 @@
 
 ### 1 - Table des matières
 ### 2 - Introduction
-Dans le futur, les humains terriens on la capacité de voyager très loin dans l'univers grace à un système de "stargate", cette technologie à permis à bon nombres de projets de voir le jour. Aujourd'hui nous nous intéressons à XenoShop, c'est une entreprise qui possède plusieurs élevage de différente éspèce alien. Avec XenoShop, adopter votre alien de compagnie!
+Dans le futur, les humains terriens on la capacité de voyager très loin dans l'univers grace à un système de "stargate", cette technologie à permis à bon nombres de projets de voir le jour. Aujourd'hui nous nous intéressons à XenoShop, c'est une entreprise de contrebande des éspèces aliens capturées. Il faut savoir que notre site fait partis des sites illégaux qui circulent dans la Galaxie. !
 #### 2.1- Objectifs
-Notre objectif est de faire une site e-commerce et de faire un chiffre d'affaire en vendant vivariums avec des animaux qui ont leurs habitat naturel qui a disparu, notre objectif et de faire perdurer leur espèce grâce à nos vivariums qui recréer leur espace naturel et aux utilisateurs qui peuvent entretenir ces espèces
+Notre objectif est de vendre des Xénomorphes avec leurs habitats ainsi que leurs nourritures.
+
 #### 2.2- Périmètre
-L'utilisateur peut se connecter, commander un vivarium et de la nourriture et / ou rendre visite à un Xénomorph pour une éventuelle adoption.
+L'utilisateur peut se connecter, commander un vivarium et de la nourriture et / ou rendre visite à un Xénomorph pour un éventuel achat.
 
 
 #### 2.3- Définition, acronyme, glossaire
 Xénomorphe > Mot qui signifie "Forme étrangère" ou "Alien" utilisé en science fiction.
 
-Vivarium > Habitat adapté aux Xénomorphes
+Vivarium > Habitat adapté aux Xénomorphes.
 
 #### 2.4- Références
 * [Behance Nasa](https://www.behance.net/gallery/57399771/NASA-A-05 https://www.behance.net/gallery/64435039/SPACED-Homepage-Concept)
