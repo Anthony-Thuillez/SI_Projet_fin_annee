@@ -72,7 +72,6 @@ entity xenomorphe
 
 #### 3.2- Dépendances
 
-prout
 
 ### 4 - Exigences spécifiques
 #### 4.1- Cas d'utilisations
@@ -122,4 +121,3 @@ entity xenomorphe
 ### 7 - Sécurité
 #### 7.1- Etude des risques
 
-y'en a pas mdr
