@@ -26,4 +26,13 @@
   &__infoLink {
     color: $secondaryColor;
   }
+  &__password {
+    background: none;
+    border: none;
+  }
+  &__edit {
+    background: $mainColor;
+    border: solid 1px #000;
+    padding: 10px 30px;
+  }
 }

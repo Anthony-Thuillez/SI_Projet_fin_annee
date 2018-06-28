@@ -9,9 +9,8 @@
 namespace App\Controller;
 
 use Symfony\Component\Routing\Annotation\Route;
-use App\Entity\Xenomorph;
-use App\Form\XenomorphType;
 use App\Repository\XenomorphRepository;
+use App\Repository\UserRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -25,7 +24,7 @@ use Symfony\Component\HttpFoundation\Response;
 class PagesController extends Controller
 {
     /**
-     * @Route("/index")
+     * @Route("/index", name="index")
      */
     public function index() : Response
     {
@@ -33,7 +32,23 @@ class PagesController extends Controller
     }
 
     /**
-     * @Route("/shopping")
+     * @Route("/vivarium", name="vivarium")
+     */
+    public function vivarium() : Response
+    {
+        return $this->render('pages/vivarium.html.twig');
+    }
+
+    /**
+     * @Route("/food", name="food")
+     */
+    public function food() : Response
+    {
+        return $this->render('pages/food.html.twig');
+    }
+
+    /**
+     * @Route("/shopping", name="shopping")
      */
     public function shopping() : Response
     {
@@ -41,15 +56,23 @@ class PagesController extends Controller
     }
 
     /**
-     * @Route("/profil")
+     * @Route("/profil", name="profil")
      */
-    public function profil() : Response
-    {
-        return $this->render('pages/profil.html.twig');
-    }
+     public function profil(UserRepository $userRepository): Response
+     {
+         return $this->render('pages/profil.html.twig', ['users' => $userRepository->findAll()]);
+     }
+
+     /**
+      * @Route("/category", name="xeno_category")
+      */
+     public function category(XenomorphRepository $xenomorphRepository) : Response
+     {
+         return $this->render('pages/category.html.twig', ['xenomorphs' => $xenomorphRepository->findAll()]);
+     }
 
     /**
-     * @Route("/filter")
+     * @Route("/filter", name="xeno_filter")
      */
     public function filter(XenomorphRepository $xenomorphRepository) : Response
     {
@@ -57,10 +80,10 @@ class PagesController extends Controller
     }
 
     /**
-     * @Route("/sheetXeno")
+     * @Route("/sheetXeno/{id}", name="xeno_sheet")
      */
-    public function sheetXeno(XenomorphRepository $xenomorphRepository) : Response
+    public function sheetXeno($id, XenomorphRepository $xenomorphRepository) : Response
     {
-        return $this->render('pages/sheetXeno.html.twig', ['xenomorphs' => $xenomorphRepository->findAll()]);
+        return $this->render('pages/sheetXeno.html.twig', ['xenomorph' => $xenomorphRepository->find($id)]);
     }
 }

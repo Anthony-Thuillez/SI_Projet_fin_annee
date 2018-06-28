@@ -39,8 +39,10 @@
   margin-top: 30px;
   background: $mainColor;
   padding: 10px 20px;
+  @media(min-width: 1366px) {
+    width: 40%;
+  }
   &__container {
-    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,5 +62,9 @@
   &__name {
     font-size: 16px;
     font-weight: bold;
+    color: $secondaryColor;
+  }
+  &__price {
+    color: $secondaryColor;
   }
 }

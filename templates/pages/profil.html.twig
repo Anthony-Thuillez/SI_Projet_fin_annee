@@ -3,7 +3,7 @@
 {% block body %}
 
 <div class="filAriane">
-    <p class="filAriane__text"><a class="filAriane__textLink" href="http://localhost:8000/pages/index">Accueuil </a>/<a class="filAriane__textLink" href="http://localhost:8000/pages/profil"> Profil </a></p>
+    <p class="filAriane__text"><a class="filAriane__textLink" href="{{ path('index') }}">Accueuil </a>/<a class="filAriane__textLink" href="{{ path('profil') }}"> Profil </a></p>
 </div>
 
 <section class="myAccount">
@@ -19,13 +19,17 @@
     <h3 class="myAccount__title">Informations</h3>
   </div>
   <div class="myAccount__infoContainer">
-    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Identifiant :</a></p>
-    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Mot de passe :</a></p>
-    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Nom :</a></p>
-    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Localisation :</a></p>
-    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Adresse :</a></p>
-    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Mail :</a></p>
-    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Téléphone :</a></p>
+  {% for user in users %}
+    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Identifiant : </a>{{ user.login }}</p>
+    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Mot de passe : </a><input class="myAccount__password" type="password" name="password" value="{{ user.password }}"></p>
+    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Nom : </a>{{ user.name }}</p>
+    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Localisation : </a>{{ user.planet }}</p>
+    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Adresse : </a>{{ user.adress }}</p>
+    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Mail : </a>{{ user.email }}</p>
+    <p class="myAccount__info"><a class="myAccount__infoLink" href="#">Téléphone : </a>06 52 29 09 98</p>
+
+    <button class="myAccount__edit" type="button" name="button">Editer</button>
+  {% endfor %}
   </div>
 </section>
 {% endblock %}

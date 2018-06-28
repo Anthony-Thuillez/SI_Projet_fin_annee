@@ -2,9 +2,8 @@
 
 
 {% block body %}
-    {% for xenomorph in xenomorphs %}
     <div class="filAriane">
-        <p class="filAriane__text">Accueuil / Xénomorph / Terrestre / {{ xenomorph.name }}</p>
+        <p class="filAriane__text"><a class="filAriane__textLink" href="{{ path('index') }}"> Accueuil </a>/<a class="filAriane__textLink" href="{{ path('xeno_category') }}"> Xénomorph </a>/<a class="filAriane__textLink" href="{{ path('xeno_filter') }}"> Catégorie </a>/ {{ xenomorph.name }}</p>
     </div>
 
     <section class="sheetXeno">
@@ -65,5 +64,4 @@
             </table>
         </div>
     </section>
-    {% endfor %}
 {% endblock %}
